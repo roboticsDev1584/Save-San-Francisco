@@ -1,0 +1,558 @@
+<!-- Website developed by Matthew and project created in collaboration with Aryan
+
+Please note that the code used to create this website cannot be 
+used for other public webpages, unless if given explicit permission by 
+Matthew or Aryan. Also, note that the images included on this website are 
+not owned by the creators of this website, but rather belong to the entities: 
+Pixabay.com and Unsplash.com, along with all font styles belonging to Google Fonts
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Saving San Francisco - Problem</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--This is for the favicon when I create it-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <style>
+        /*Main background color: #35d0c7
+          Strip color 1: #fff8ec
+          Strip color 2: #ffe3b3
+        */
+        html {
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior:smooth;
+        }
+        html, body {
+            height:100%;
+        }
+        body {
+            margin:0;
+            padding:0;
+            /*background-color: #35d0c7;/*#27a9e1  #83d9dc #35d0c7*/ 
+            background-image:url(Content/crowded_city.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:center;
+            background-attachment:fixed;
+        }
+        a, a:hover, a:visited, a:active {
+            text-decoration:none;
+            color:black;
+        }
+        header {
+            font-style:italic;
+            font-weight:900;
+            padding:15px;
+            font-size:40px;
+            text-align:center;
+            color:black;
+            box-sizing:border-box;
+            /*background-color:#ffe3b3;/* #FDFD96 #F0E68C #F5F5F5 #83d9dc #fcdcdf #feffbf */ 
+            background-image:linear-gradient(to right, #ffe3b3, #ffc766,#ffe3b3);
+            border-bottom:3px solid #4d94ff;
+        }
+        .contentC {
+            /*margin-left:10%;*/
+            margin-right:auto;
+            margin-left:auto;
+            width:80%;
+            max-width:860px;
+            height:auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            /*originally opacity: 0.93;*/
+        }
+        .subHeaderC {
+            font-family: 'Ubuntu Condensed', sans-serif;
+            margin-top:4%;
+            font-weight:bold;
+            text-align:center;
+            margin-bottom:0;
+            font-size:65px;
+            padding:15%;
+            box-sizing:border-box;
+            color:white;
+            /*font-weight:700;*/
+            /*background-color:white;*/
+            background-image:linear-gradient(to left, #4d94ff, #0052cc);
+            /*background-image:linear-gradient(to right, #1a8cff, #3399ff);
+            background-image:linear-gradient(to left, #ffe3b3, #ffc766);
+            /*background-color:white;*/
+        }
+        .navbarC {
+            display:grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            text-align:center;
+            align-content:center;
+            height:45px;
+            overflow:hidden;
+        }
+        .navObj {
+            display:block;
+            box-sizing:border-box;
+            padding:10px;
+            font-size:20px;
+            user-select:none;
+            background-color:#ffe3b3;
+            text-overflow:ellipsis;
+            height:45px;
+        }
+        .navObj:hover {
+            background-color:#ffda99;
+        }
+        .subTitle {
+            font-weight:500;
+            text-align:left;
+            background-color:#ffe3b3;
+            margin-top:0;
+            margin-bottom:0;
+            padding: 1.5% 5%;
+            padding-bottom:0.5%;
+            font-size:23px;
+            opacity:0.95;
+        }
+        .rTitle {
+            text-align:right;
+            background-color:#ffda99;
+        }
+        /*Main background color: #35d0c7
+          Strip color 1: #fff8ec
+          Strip color 2: #ffe3b3
+        */
+        .para {
+            margin-top:0;
+            margin-bottom:0;
+            border-left:5px solid #4d94ff;
+            padding-left:3%;
+            padding-right:1.5%;
+            background-color:#ffc766;
+        }
+        .paraWrap {
+            font-weight:300;
+            text-align:justify;
+            background-color:rgba(255, 227, 179, 0.95);/*same thing as #ffe3b3*/
+            padding: 1.5% 6%; /*5%*/
+            padding-bottom:12px;
+        }
+        .rParaWrap {
+            background-color:rgba(255, 218, 153, 0.95); /*sane thing as #ffda99*/
+        }
+        .rPara {
+            border-right:5px solid #4d94ff;
+            border-left: 0px;
+            padding-right:3%;
+            padding-left:1.5%;
+            direction:rtl;
+        }
+        /*This is to create dividers between each of the pieces of content*/
+        /*.divider {  
+            width:30%;
+            margin:0% auto;
+            border-bottom:5px solid #595959;
+        }
+        .dividerC {
+            box-sizing:border-box;
+            padding-top:1.5%;
+            padding-bottom:3%;
+            height:5px;
+            background-color:lightgrey;
+        }*/
+        .dividerC {
+            padding:2%;
+            background-color:#ffe3b3;
+            opacity:0.95;
+        }
+        .dividerRC {
+            background-color:#ffda99;
+        }
+        .footerC {
+            height:auto;
+            box-sizing:border-box;
+            color:white;
+            background-color:#333333;
+            margin-top:5%;
+            width:100%;
+            text-align:center;
+            font-weight:300;
+            padding:12px 0%;
+        }
+        .mediaNavC {
+            width:100%;
+            height:auto;
+            text-align:center;
+            font-weight:500;
+            margin:0;
+            padding:0;
+            background-color:#ffe3b3;
+            display:none;
+        }
+        .mnavObj {
+            font-size:20px;
+            padding: 15px 0px;
+        }
+        .mnavObj:hover {
+            background-color:#ffda99;
+        }
+        .contImg {
+            display:block;
+            margin:0% auto 0%;
+            width:auto;
+            height:150px;
+        }
+        .contImg:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .contImgC {
+            background-color:rgba(255, 227, 179, 0.95);
+            height:auto;
+        }
+        .contImgRC {
+            background-color:rgba(255, 218, 153, 0.95);
+            height:auto;
+        }
+        @media only screen and (max-width: 770px){
+            .mediaNavC {
+                display:block;
+            }
+            .navbarC {
+                display:none;
+            }
+        }
+        /*This styling is for the zoom image/ gallery effect*/
+        .zoomImgC {
+            position:fixed;
+            width:100%;
+            height:100%;
+            background-color:rgba(0,0,0,0.85);
+            z-index:99;
+            top: 0%;
+            left: 0%;
+            display:none;
+            text-align:center;
+        }
+        .zoomImg{
+            position:absolute;
+            left:50%;
+            top:50%;
+            /*margin-top:-40vmin;*/
+            transform: translate(-50%, -50%);
+            grid-column:2 / 3;
+            height:70vmin;
+            width:auto;
+        }
+        .close {
+            position:fixed;
+            top:5%;
+            right:40px;
+            color:white;
+            z-index:99;
+            font-size:30px;
+            font-weight:bold;
+            display:none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            padding:4px;
+        }
+        .close:hover {
+            color:#b3b3b3;
+        }
+        .lArrw {
+            font-family: 'Staatliches', cursive;
+            position:fixed;
+            top:45%;
+            left:20%;
+            color:white;
+            z-index:99;
+            font-size:60px;
+            font-weight:bold;
+            display:none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            padding:4px;
+        }
+        .lArrw:hover {
+            color:#b3b3b3;
+        }
+        .rArrw {
+            font-family: 'Staatliches', cursive;
+            position:fixed;
+            top:45%;
+            right:20%;
+            color:white;
+            z-index:99;
+            font-size:60px;
+            font-weight:bold;
+            display:none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            padding:4px;
+        }
+        .rArrw:hover {
+            color:#b3b3b3;
+        }
+        @media (max-width: 770px){
+            .lArrw {
+                width:0px;
+                height:0px;
+                visibility:hidden;
+            }
+            .rArrw {
+                width:0px;
+                height:0px;
+                visibility:hidden;
+            }
+            .zoomImg {
+                left:0%;
+                transform: translate(0%, -50%);
+            }
+        }
+        @media (max-width: 700px){
+            .zoomImg {
+                left:0%;
+                transform: translate(0%, -50%);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="headerC">
+    <a href="index.html"><header>Saving San Francisco</header></a>
+    <div class="navbarC">
+        <a href="index.html"><div class="navObj" id="nav1">Home</div></a>
+        <a href="problem.html"><div class="navObj" id="nav2">Problem</div></a>
+        <a href="solution.html"><div class="navObj" id="nav3">Solution</div></a>
+        <a href="how-to-help.html"><div class="navObj" id="nav4">How To Help</div></a>
+        <a href="bibliography.html"><div class="navObj" id="nav5">Bibliography</div></a>
+    </div>
+    <div class="mediaNavC">
+        <a href="index.html"><div class="mnavObj" id="nav1">Home</div></a>
+        <a href="problem.html"><div class="mnavObj" id="nav2">Problem</div></a>
+        <a href="solution.html"><div class="mnavObj" id="nav3">Solution</div></a>
+        <a href="how-to-help.html"><div class="mnavObj" id="nav4">How To Help</div></a>
+        <a href="bibliography.html"><div class="mnavObj" id="nav5">Bibliography</div></a>
+    </div>
+</div>
+<div class="contentC">
+    <div class="zoomImgC">
+        <img loading="lazy" class="zoomImg" src="Content/homeless.jpg">
+        </div>
+        <div class="lArrw">&lt;</div>
+        <div class="close">X</div>
+        <div class="rArrw">&gt;</div>
+    <div class="subHeaderC">Problem</div>
+    <h3 class="subTitle">The Housing Crisis Explained</h3>
+    <div class="paraWrap">
+    <p class="para">San Francisco has a problem. It has some of the highest rents in the country; 
+        $3.76 per square foot, on average. People are being evicted, only half of 
+        needed housing units are being constructed each year, and it can take decades 
+        to get a structure built. How did San Francisco get here, and what can be done?
+    </p>
+    </div>
+    <div class="contImgC"><img loading="lazy" class="contImg" src="Content/homeless.jpg" /></div>
+    <div class="dividerC"><div class="divider"></div></div>
+    <h3 class="subTitle rTitle">How Did We Get Here?</h3>
+    <div class="paraWrap rParaWrap">
+    <p class="para rPara">San Francisco has a roughly 35% home ownership rate, and 75% of 
+        the rental market is under rent control. How did we get here? Homeowners have a 
+        vested interest in keeping their property values high, and they do so via hundreds 
+        of influential political groups. Meanwhile, rent-controlled tenants care much more 
+        about eviction protections, since many of them pay rents so far below market that 
+        no reasonable amount of construction could alleviate their issues. Meanwhile, new 
+        tech products require less physical office space and benefit from greater population 
+        density, driving the expansion of Silicon Valley from its suburban strongholds to San 
+        Francisco. The solution seems simple; build more housing. But it isn't quite that easy<span style="float:right">.</span>
+    </p>
+    </div>
+    <div class="contImgRC"><img loading="lazy" class="contImg" src="Content/planning.jpg" /></div>
+    <div class="dividerC dividerRC"><div class="divider"></div></div>
+    <h3 class="subTitle">Local Movements</h3>
+    <div class="paraWrap">
+    <p class="para">If it was just a matter of building more housing, the problem would be 
+        easy to rectify. However, there is 50 years of history, movements, and resistance 
+        to a changing San Francisco. In 1967, residents of the Mission persuaded city government 
+        to vote down an urban restoration program out of fear of losing their neighborhood. 
+        This attitude continues. Environmental and preservationist movements caused regulation 
+        limiting the amount of commercial space that could be built in a year. It wasn't just 
+        the potentially displaced either. A wealthy couple sponsored and almost single-handedly 
+        funded a campaign to pass a new law that would require the city to have a public 
+        vote on each building over 4 stories tall.
+    </p>
+    </div>
+    <div class="contImgC"><img loading="lazy" class="contImg" src="Content/planning.jpg" /></div>
+    <div class="dividerC"><div class="divider"></div></div>
+    <h3 class="subTitle rTitle">Effects Of Byzantine Bureaucracy</h3>
+    <div class="paraWrap rParaWrap">
+    <p class="para rPara">Local organizations have used San Francisco's regulations to further 
+        their own influence. SF has a preliminary review that last 6 months, a chance for 
+        neighbors to appeal your permit, requires long public notice that can take years, and 
+        allows neighborhood groups to file an environmental lawsuit. Should all of these fail, 
+        locals can still put development on a citywide ballot, where everyone must vote on them. 
+        This can add years of impasse for a builder. Occasionally, this leads to morally dubious 
+        deals, where the builder donates large amounts to charity and community improvement 
+        programs. This creates many unofficial expenses that are passed on to tenants. As a 
+        result, construction costs can reach $500,000 for a 800 sq. feet unit<span style="float:right">.</span>
+    </p>
+    </div>
+    <div class="contImgRC"><img loading="lazy" class="contImg" src="Content/planning.jpg" /></div>
+    <div class="dividerC dividerRC"><div class="divider"></div></div>
+    <h3 class="subTitle">Proposition 13</h3>
+    <div class="paraWrap">
+    <p class="para">
+        A former small newspaper publisher, Howard Jarvis, had an idea. He would 
+        cap property taxes at 1%  of their assessed value, and prevent a rise of more than 2% per 
+        year until the property was sold again. However, landlords did not pass savings on to 
+        renters, but kept them for themselves. Prop 13 had many effects. California's property 
+        tax revenues fell by 60%. School funding, financed from property taxes, plummeted. City 
+        governments had to support more office and retail development, to boost taxes. It also 
+        caused a "lock-in" effect as property values soared, causing massive gulfs between taxes 
+        on newly sold properties and ones that had been owned for a long time. This enhanced 
+        the power of homeowners, contributing to the problem.
+    </p>
+    </div>
+    <div class="contImgC"><img loading="lazy" class="contImg" src="Content/planning.jpg" /></div>
+    <div class="dividerC"><div class="divider"></div></div>
+    <h3 class="subTitle rTitle">Effects Of The Crisis</h3>
+    <div class="paraWrap rParaWrap">
+    <p class="para rPara">Home prices in SF are 140% above base construction costs. This is because 
+        San Francisco has created artificial limits on housing construction. It's not just SF. 
+        Between 1955 and 1964, NYC permitted more than 11,000 units a year. Between 1980 and 1999, 
+        it permitted only 3120 per year. Manhattan real estate prices went up 284% in that time 
+        period in constant dollars. If San Francisco had a more elastic housing supply, it 
+        would make living more affordable and allow the economy to rebound thanks to increased income<span style="float:right">.</span>
+    </p>
+    </div>
+    <div class="contImgRC"><img loading="lazy" class="contImg" src="Content/planning.jpg" /></div>
+    <div class="dividerC dividerRC"><div class="divider"></div></div>
+</div> <!--End of contentC tag-->
+<div class="footerC">
+    <footer>&copy; 2021 Matthew and Aryan Inc.</footer>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type='text/javascript'> //edit the img references in this code when I have the problem images ready
+$(document).ready(function() {
+    scrollTop =  window.pageYOffset || document.documentElement.scrollTop; 
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+    var pictureArray = document.getElementsByClassName('contImg');
+    var currentSrc = "";
+    $("img").on("contextmenu",function(){
+        return false;
+     });
+     $(".contImg").click(function(){
+        $(".zoomImg").attr("src", $(this).attr("src"));
+        currentSrc = $(this).attr("src");
+        //var testSrc = currentSrc.replace("file:///C:/Users/Matth/OneDrive/Desktop/Current_School/BBT_Phoenix_Project_Website/", "");
+        var testSrc = currentSrc;
+	//alert("currentSrc: " + currentSrc);
+        /*window.onscroll = function() { 
+            window.scrollTo(scrollLeft, scrollTop); //this will disable scrolling
+        };*/
+        $(".zoomImgC").css({"display":"block"});
+        $(".close").css({"display":"block"});
+        $(".lArrw").css({"display":"block"});
+        $(".rArrw").css({"display":"block"});
+        if (testSrc == "Content/homeless.jpg") {
+            $(".lArrw").css({"display":"none"});
+        }
+        if (testSrc == "Content/money.jpg") {
+            $(".rArrw").css({"display":"none"});
+        }
+     });
+     $(".rArrw").click(function(){
+	     //alert("calling right arrow function");
+        for (var index = 0; index<pictureArray.length; index++) {
+            var data = pictureArray[index].src; //this gets the src attribute which will be compared
+            //this cleans the string to make sure that the correct thing is being searched for
+            data = data.replace("https://roboticsdev1584.github.io/FRC-TEAM-5417/", "");//this line needs to be edited soon
+            data = data.replace("file:///C:/Users/Matth/OneDrive/Desktop/Current_School/BBT_Phoenix_Project_Website/", "");
+            //alert("scanning, current data: " + data);
+            if (data == currentSrc) {//match has been found, this must be the current img
+                //alert("found image!");
+                var newData = pictureArray[index + 1].src;
+                //alert("new data: " + newData);
+                newData = newData.replace("https://roboticsdev1584.github.io/FRC-TEAM-5417/", "");
+                newData = newData.replace("file:///C:/Users/Matth/OneDrive/Desktop/Current_School/BBT_Phoenix_Project_Website/", "");
+                $(".zoomImg").attr("src", newData); //flip to next image
+                currentSrc = newData;
+                //var testSrc = currentSrc.replace("file:///C:/Users/Matth/OneDrive/Desktop/Current_School/FRC_Website_Minified/Website_Pages/Media/Slideshows/2016/", "");
+                var testSrc = currentSrc.replace("Content", "");
+                //alert("currentSrc: " + currentSrc);
+                //currentSrc = pictureArray[index + 1].src;
+                //alert(testSrc);
+                $(".rArrw").css({"display":"none"});
+                $(".lArrw").css({"display":"none"});
+                $(".rArrw").css({"display":"block"});
+                $(".lArrw").css({"display":"block"});
+                if (testSrc == "/homeless.jpg") {
+                    $(".lArrw").css({"display":"none"});
+                }
+                if (testSrc == "/money.jpg") {
+                    $(".rArrw").css({"display":"none"});
+                }
+                break;
+            }
+        }
+        //alert("exiting1");
+        return;
+     });//https://roboticsdev1584.github.io/FRC-TEAM-5417/Media/Slideshows/2016/2016_1.jpg
+     //alert("over here");
+	$(".lArrw").click(function(){
+	     //alert("calling left arrow function");
+        for (var index = 0; index<pictureArray.length; index++) {
+            var data = pictureArray[index].src; //this gets the src attribute which will be compared
+            //this cleans the string to make sure that the correct thing is being searched for
+            data = data.replace("https://roboticsdev1584.github.io/FRC-TEAM-5417/", "");
+            data = data.replace("file:///C:/Users/Matth/OneDrive/Desktop/Current_School/BBT_Phoenix_Project_Website/", "");
+            //alert("scanning, current data: " + data);
+            if (data == currentSrc) {//match has been found, this must be the current img
+                //alert("found image!");
+                var newData = pictureArray[index - 1].src;
+                //alert("new data: " + newData);
+                newData = newData.replace("https://roboticsdev1584.github.io/FRC-TEAM-5417/", "");
+                newData = newData.replace("file:///C:/Users/Matth/OneDrive/Desktop/Current_School/BBT_Phoenix_Project_Website/", "");
+                $(".zoomImg").attr("src", newData); //flip to next image
+                currentSrc = newData;
+                //var testSrc = currentSrc.replace("file:///C:/Users/Matth/OneDrive/Desktop/Current_School/FRC_Website_Minified/Website_Pages/Media/Slideshows/2016/", "");
+                var testSrc = currentSrc.replace("Content", "");
+                //alert("currentSrc: " + currentSrc);
+                //currentSrc = pictureArray[index + 1].src;
+                //alert(testSrc);
+                $(".rArrw").css({"display":"none"});
+                $(".lArrw").css({"display":"none"});
+                $(".rArrw").css({"display":"block"});
+                $(".lArrw").css({"display":"block"});
+                if (testSrc == "/homeless.jpg") {
+                    $(".lArrw").css({"display":"none"});
+                }
+                if (testSrc == "/money.jpg") {
+                    $(".rArrw").css({"display":"none"});
+                }
+                break;
+            }
+        }
+        //alert("exiting1");
+        return;
+     });
+     //alert("over here2");
+     $(".close").click(function(){
+        window.onscroll = function() {}; //enable scrolling
+        $(".zoomImgC").css({"display":"none"});
+        $(".close").css({"display":"none"});
+        $(".lArrw").css({"display":"none"});
+        $(".rArrw").css({"display":"none"});
+     });
+ });
+</script>
+</html>

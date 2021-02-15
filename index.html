@@ -1,0 +1,303 @@
+<!-- Website developed by Matthew and project created in collaboration with Aryan
+
+Please note that the code used to create this website cannot be 
+used for other public webpages, unless if given explicit permission by 
+Matthew or Aryan. Also, note that the images included on this website are 
+not owned by the creators of this website, but rather belong to the entities: 
+Pixabay.com and Unsplash.com, along with all font styles belonging to Google Fonts.
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Saving San Francisco - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--This is for the favicon when I create it-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <style>
+        /*Main background color: #35d0c7
+          Strip color 1: #fff8ec
+          Strip color 2: #ffe3b3
+        */
+        html {
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior:smooth;
+        }
+        html, body {
+            height:100%;
+        }
+        body {
+            margin:0;
+            padding:0;
+            /*background-color: #35d0c7;/*#27a9e1  #83d9dc #35d0c7*/ 
+            background-image:url(Content/crowded_city.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:center;
+            background-attachment:fixed;
+        }
+        a, a:hover, a:visited, a:active {
+            text-decoration:none;
+            color:black;
+        }
+        header {
+            font-style:italic;
+            font-weight:900;
+            padding:15px;
+            font-size:40px;
+            text-align:center;
+            color:black;
+            box-sizing:border-box;
+            /*background-color:#ffe3b3;/* #FDFD96 #F0E68C #F5F5F5 #83d9dc #fcdcdf #feffbf */ 
+            background-image:linear-gradient(to right, #ffe3b3, #ffc766,#ffe3b3);
+            border-bottom:3px solid #4d94ff;
+        }
+        .contentC {
+            /*margin-left:10%;*/
+            margin-right:auto;
+            margin-left:auto;
+            width:80%;
+            max-width:860px;
+            height:auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            /*originally opacity: 0.93;*/
+        }
+        .subHeaderC {
+            font-family: 'Ubuntu Condensed', sans-serif;
+            margin-top:4%;
+            font-weight:bold;
+            text-align:center;
+            margin-bottom:0;
+            font-size:65px;
+            padding:15%;
+            box-sizing:border-box;
+            color:white;
+            /*font-weight:700;*/
+            /*background-color:white;*/
+            background-image:linear-gradient(to left, #4d94ff, #0052cc);
+            /*background-image:linear-gradient(to right, #1a8cff, #3399ff);
+            background-image:linear-gradient(to left, #ffe3b3, #ffc766);
+            /*background-color:white;*/
+        }
+        .navbarC {
+            display:grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            text-align:center;
+            align-content:center;
+            height:45px;
+            overflow:hidden;
+        }
+        .navObj {
+            display:block;
+            box-sizing:border-box;
+            padding:10px;
+            font-size:20px;
+            user-select:none;
+            background-color:#ffe3b3;
+            text-overflow:ellipsis;
+            height:45px;
+        }
+        .navObj:hover {
+            background-color:#ffda99;
+        }
+        .subTitle {
+            font-weight:500;
+            text-align:left;
+            background-color:rgba(255, 227, 179, 0.95);/*#ffe3b3*/
+            margin-top:0;
+            margin-bottom:0;
+            padding: 1.5% 5%;
+            padding-bottom:0.5%;
+            font-size:23px;
+        }
+        /*Main background color: #35d0c7
+          Strip color 1: #fff8ec
+          Strip color 2: #ffe3b3
+        */
+        .para {
+            margin-top:0;
+            margin-bottom:0;
+            border-left:5px solid #4d94ff;
+            padding-left:3%;
+            padding-right:1.5%;
+            background-color:#ffc766;
+        }
+        .paraWrap {
+            font-weight:300;
+            text-align:justify;
+            background-color:rgba(255, 227, 179, 0.95);/*same thing as #ffe3b3*/
+            padding: 1.5% 6%; /*5%*/
+            padding-bottom:2.5%;
+        }
+        .rParaWrap {
+            background-color:rgba(255, 218, 153, 0.95); /*sane thing as #ffda99*/
+        }
+        .rPara {
+            border-right:5px solid #4d94ff;
+            border-left: 0px;
+            padding-right:3%;
+            padding-left:1.5%;
+            direction:rtl;
+        }
+        /*This is to create dividers between each of the pieces of content*/
+        /*.divider {  
+            width:30%;
+            margin:0% auto;
+            border-bottom:5px solid #595959;
+        }
+        .dividerC {
+            box-sizing:border-box;
+            padding-top:1.5%;
+            padding-bottom:3%;
+            height:5px;
+            background-color:lightgrey;
+        }*/
+        .dividerC {
+            padding:2%;
+            background-color:#ffe3b3;
+            opacity:0.95;
+        }
+        .dividerRC {
+            background-color:#ffda99;
+        }
+        .footerC {
+            height:auto;
+            box-sizing:border-box;
+            color:white;
+            background-color:#333333;
+            margin-top:5%;
+            width:100%;
+            text-align:center;
+            font-weight:300;
+            padding:12px 0%;
+        }
+        .mediaNavC {
+            width:100%;
+            height:auto;
+            text-align:center;
+            font-weight:500;
+            margin:0;
+            padding:0;
+            background-color:#ffe3b3;
+            display:none;
+        }
+        .mnavObj {
+            font-size:20px;
+            padding: 15px 0px;
+        }
+        .mnavObj:hover {
+            background-color:#ffda99;
+        }
+        .subsubTitle {
+            display:block;
+            font-weight:200;
+            font-style:italic;
+            text-decoration:underline;
+            text-align:left;
+            margin:0;
+            padding: 0.5% 5%;
+            padding-bottom:1%;
+            font-size:17.5px;
+            background-color:rgba(255, 227, 179, 0.95);
+        }
+        .rTitle {
+            text-align:right;
+            background-color:rgba(255, 218, 153, 0.95);
+        }
+        @media only screen and (max-width: 770px){
+            .mediaNavC {
+                display:block;
+            }
+            .navbarC {
+                display:none;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="headerC">
+    <a href="index.html"><header>Saving San Francisco</header></a>
+    <div class="navbarC">
+        <a href="index.html"><div class="navObj" id="nav1">Home</div></a>
+        <a href="problem.html"><div class="navObj" id="nav2">Problem</div></a>
+        <a href="solution.html"><div class="navObj" id="nav3">Solution</div></a>
+        <a href="how-to-help.html"><div class="navObj" id="nav4">How To Help</div></a>
+        <a href="bibliography.html"><div class="navObj" id="nav5">Bibliography</div></a>
+    </div>
+    <div class="mediaNavC">
+        <a href="index.html"><div class="mnavObj" id="nav1">Home</div></a>
+        <a href="problem.html"><div class="mnavObj" id="nav2">Problem</div></a>
+        <a href="solution.html"><div class="mnavObj" id="nav3">Solution</div></a>
+        <a href="how-to-help.html"><div class="mnavObj" id="nav4">How To Help</div></a>
+        <a href="bibliography.html"><div class="mnavObj" id="nav5">Bibliography</div></a>
+    </div>
+</div>
+<div class="contentC">
+    <div class="subHeaderC">Home</div>
+    <h3 class="subTitle">Our Mission</h3>
+    <div class="paraWrap">
+    <p class="para">
+        To solve the San Francisco housing crisis, our utmost priority is to bring you the
+        true, unbiased facts concerning this monumental issue, and dedicate our time to creating
+        applicable solutions that will bring this dilemna to an end. With your help and support, 
+        we will be able to put this crisis to an end once and for all.
+    </p>
+    </div>
+    <div class="dividerC"><div class="divider"></div></div>
+    <h3 class="subTitle rTitle">The Problem</h3>
+    <div class="paraWrap rParaWrap">
+    <p class="para rPara">
+        San Francisco has a problem. It has some of the highest rents in the country; $3.76 per 
+        square foot, on average. People are being evicted, only half of needed housing units are 
+        being constructed each year, and it can take decades to get a structure built. To learn 
+        more about how this could have occurred, in the first place visit our 'Problem' 
+        page<span style="float:right">.</span>
+    </p>
+    </div>
+    <a class="subsubTitle rTitle" href="problem.html">Learn More About The Problem Here...</a>
+    <div class="dividerC dividerRC"><div class="divider"></div></div>
+    <h3 class="subTitle">Our Solution</h3>
+    <div class="paraWrap">
+    <p class="para">
+        To fix this multifaceted crisis, we plan to: overhaul the planning process used
+        in the construction of new housing units, attain more land (for housing), develop 
+        SRO housing, create a public relations campaign, preserve fair rent control, build 
+        more transporation systems, and increase taxes on tech companies. These changes are 
+        long overdue, and you can learn more about their specifics below.
+    </p>
+    </div>
+    <a class="subsubTitle" href="solution.html">Learn More About Our Solution Here...</a>
+    <div class="dividerC"><div class="divider"></div></div>
+    <h3 class="subTitle rTitle">How You Can Help</h3>
+    <div class="paraWrap rParaWrap">
+    <p class="para rPara">
+        First and foremost, you can help support our efforts through your vote, as this 
+        would lead to the implementation of life-changing policies that will ultimately 
+        end the housing crisis in San Francisco, but you can also help make a difference 
+        by learning more about the crisis and spreading awareness of the issue to help the 
+        people currently in power make the best decisions as possible<span style="float:right">.</span>
+    </p>
+    </div>
+    <a class="subsubTitle rTitle"  href="how-to-help.html">Learn How You Can Help Here...</a>
+    <div class="dividerC dividerRC"><div class="divider"></div></div>
+    <h3 class="subTitle">Annotated Bibliography</h3>
+    <div class="paraWrap">
+    <p class="para">
+        If you would like to view more of our extensive research on the crisis, or just 
+        want to find more articles regarding the issue, please visit our annotated
+        bibliography, featured below.
+    </p>
+    </div>
+    <a class="subsubTitle" href="bibliography.html">View Our Annotated Bibliography Here...</a>
+    <div class="dividerC"><div class="divider"></div></div>
+</div> <!--End of contentC tag-->
+<div class="footerC">
+    <footer>&copy; 2021 Matthew and Aryan Inc.</footer>
+</div>
+</body>
+<script>
+    
+</script>
+</html>

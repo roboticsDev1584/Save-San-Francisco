@@ -1,0 +1,569 @@
+<!-- Website developed by Matthew and project created in collaboration with Aryan
+
+Please note that the code used to create this website cannot be 
+used for other public webpages, unless if given explicit permission by 
+Matthew or Aryan. Also, note that the images included on this website are 
+not owned by the creators of this website, but rather belong to the entities: 
+Pixabay.com and Unsplash.com, along with all font styles belonging to Google Fonts
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Saving San Francisco - Solution</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--This is for the favicon when I create it-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <style>
+        /*Main background color: #35d0c7
+          Strip color 1: #fff8ec
+          Strip color 2: #ffe3b3
+        */
+        html {
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior:smooth;
+        }
+        html, body {
+            height:100%;
+        }
+        body {
+            margin:0;
+            padding:0;
+            /*background-color: #35d0c7;/*#27a9e1  #83d9dc #35d0c7*/ 
+            background-image:url(Content/crowded_city.jpg);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:center;
+            background-attachment:fixed;
+        }
+        a, a:hover, a:visited, a:active {
+            text-decoration:none;
+            color:black;
+        }
+        header {
+            font-style:italic;
+            font-weight:900;
+            padding:15px;
+            font-size:40px;
+            text-align:center;
+            color:black;
+            box-sizing:border-box;
+            /*background-color:#ffe3b3;/* #FDFD96 #F0E68C #F5F5F5 #83d9dc #fcdcdf #feffbf */ 
+            background-image:linear-gradient(to right, #ffe3b3, #ffc766,#ffe3b3);
+            border-bottom:3px solid #4d94ff;
+        }
+        .contentC {
+            /*margin-left:10%;*/
+            margin-right:auto;
+            margin-left:auto;
+            width:80%;
+            max-width:860px;
+            height:auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            /*originally opacity: 0.93;*/
+        }
+        .subHeaderC {
+            font-family: 'Ubuntu Condensed', sans-serif;
+            margin-top:4%;
+            font-weight:bold;
+            text-align:center;
+            margin-bottom:0;
+            font-size:65px;
+            padding:15%;
+            box-sizing:border-box;
+            color:white;
+            /*font-weight:700;*/
+            /*background-color:white;*/
+            background-image:linear-gradient(to left, #4d94ff, #0052cc);
+            /*background-image:linear-gradient(to right, #1a8cff, #3399ff);
+            background-image:linear-gradient(to left, #ffe3b3, #ffc766);
+            /*background-color:white;*/
+        }
+        .navbarC {
+            display:grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            text-align:center;
+            align-content:center;
+            height:45px;
+            overflow:hidden;
+        }
+        .navObj {
+            display:block;
+            box-sizing:border-box;
+            padding:10px;
+            font-size:20px;
+            user-select:none;
+            background-color:#ffe3b3;
+            text-overflow:ellipsis;
+            height:45px;
+        }
+        .navObj:hover {
+            background-color:#ffda99;
+        }
+        .subTitle {
+            font-weight:500;
+            text-align:left;
+            background-color:#ffe3b3;
+            margin-top:0;
+            margin-bottom:0;
+            padding: 1.5% 5%;
+            padding-bottom:0.5%;
+            font-size:23px;
+            opacity:0.95;
+        }
+        .rTitle {
+            text-align:right;
+            background-color:#ffda99;
+        }
+        /*Main background color: #35d0c7
+          Strip color 1: #fff8ec
+          Strip color 2: #ffe3b3
+        */
+        .para {
+            margin-top:0;
+            margin-bottom:0;
+            border-left:5px solid #4d94ff;
+            padding-left:3%;
+            padding-right:1.5%;
+            background-color:#ffc766;
+        }
+        .paraWrap {
+            font-weight:300;
+            text-align:justify;
+            background-color:rgba(255, 227, 179, 0.95);/*same thing as #ffe3b3*/
+            padding: 1.5% 6%; /*5%*/
+            padding-bottom:12px;
+        }
+        .rParaWrap {
+            background-color:rgba(255, 218, 153, 0.95); /*sane thing as #ffda99*/
+        }
+        .rPara {
+            border-right:5px solid #4d94ff;
+            border-left: 0px;
+            padding-right:3%;
+            padding-left:1.5%;
+            direction:rtl;
+        }
+        /*This is to create dividers between each of the pieces of content*/
+        /*.divider {  
+            width:30%;
+            margin:0% auto;
+            border-bottom:5px solid #595959;
+        }
+        .dividerC {
+            box-sizing:border-box;
+            padding-top:1.5%;
+            padding-bottom:3%;
+            height:5px;
+            background-color:lightgrey;
+        }*/
+        .dividerC {
+            padding:2%;
+            background-color:#ffe3b3;
+            opacity:0.95;
+        }
+        .dividerRC {
+            background-color:#ffda99;
+        }
+        .footerC {
+            height:auto;
+            box-sizing:border-box;
+            color:white;
+            background-color:#333333;
+            margin-top:5%;
+            width:100%;
+            text-align:center;
+            font-weight:300;
+            padding:12px 0%;
+        }
+        .mediaNavC {
+            width:100%;
+            height:auto;
+            text-align:center;
+            font-weight:500;
+            margin:0;
+            padding:0;
+            background-color:#ffe3b3;
+            display:none;
+        }
+        .mnavObj {
+            font-size:20px;
+            padding: 15px 0px;
+        }
+        .mnavObj:hover {
+            background-color:#ffda99;
+        }
+        .contImg {
+            display:block;
+            margin:0% auto 0%;
+            width:auto;
+            height:150px;
+        }
+        .contImg:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .contImgC {
+            background-color:rgba(255, 227, 179, 0.95);
+            height:auto;
+        }
+        .contImgRC {
+            background-color:rgba(255, 218, 153, 0.95);
+            height:auto;
+        }
+        @media only screen and (max-width: 770px){
+            .mediaNavC {
+                display:block;
+            }
+            .navbarC {
+                display:none;
+            }
+        }
+        /*This styling is for the zoom image/ gallery effect*/
+        .zoomImgC {
+            position:fixed;
+            width:100%;
+            height:100%;
+            background-color:rgba(0,0,0,0.85);
+            z-index:99;
+            top: 0%;
+            left: 0%;
+            display:none;
+            text-align:center;
+        }
+        .zoomImg{
+            position:absolute;
+            left:50%;
+            top:50%;
+            /*margin-top:-40vmin;*/
+            transform: translate(-50%, -50%);
+            grid-column:2 / 3;
+            height:70vmin;
+            width:auto;
+        }
+        .close {
+            position:fixed;
+            top:5%;
+            right:40px;
+            color:white;
+            z-index:99;
+            font-size:30px;
+            font-weight:bold;
+            display:none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            padding:4px;
+        }
+        .close:hover {
+            color:#b3b3b3;
+        }
+        .lArrw {
+            font-family: 'Staatliches', cursive;
+            position:fixed;
+            top:45%;
+            left:20%;
+            color:white;
+            z-index:99;
+            font-size:60px;
+            font-weight:bold;
+            display:none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            padding:4px;
+        }
+        .lArrw:hover {
+            color:#b3b3b3;
+        }
+        .rArrw {
+            font-family: 'Staatliches', cursive;
+            position:fixed;
+            top:45%;
+            right:20%;
+            color:white;
+            z-index:99;
+            font-size:60px;
+            font-weight:bold;
+            display:none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            padding:4px;
+        }
+        .rArrw:hover {
+            color:#b3b3b3;
+        }
+        @media (max-width: 770px){
+            .lArrw {
+                width:0px;
+                height:0px;
+                visibility:hidden;
+            }
+            .rArrw {
+                width:0px;
+                height:0px;
+                visibility:hidden;
+            }
+            .zoomImg {
+                left:0%;
+                transform: translate(0%, -50%);
+            }
+        }
+        @media (max-width: 700px){
+            .zoomImg {
+                left:0%;
+                transform: translate(0%, -50%);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="headerC">
+    <a href="index.html"><header>Saving San Francisco</header></a>
+    <div class="navbarC">
+        <a href="index.html"><div class="navObj" id="nav1">Home</div></a>
+        <a href="problem.html"><div class="navObj" id="nav2">Problem</div></a>
+        <a href="solution.html"><div class="navObj" id="nav3">Solution</div></a>
+        <a href="how-to-help.html"><div class="navObj" id="nav4">How To Help</div></a>
+        <a href="bibliography.html"><div class="navObj" id="nav5">Bibliography</div></a>
+    </div>
+    <div class="mediaNavC">
+        <a href="index.html"><div class="mnavObj" id="nav1">Home</div></a>
+        <a href="problem.html"><div class="mnavObj" id="nav2">Problem</div></a>
+        <a href="solution.html"><div class="mnavObj" id="nav3">Solution</div></a>
+        <a href="how-to-help.html"><div class="mnavObj" id="nav4">How To Help</div></a>
+        <a href="bibliography.html"><div class="mnavObj" id="nav5">Bibliography</div></a>
+    </div>
+</div>
+<div class="contentC">
+    <div class="zoomImgC">
+        <img loading="lazy" class="zoomImg" src="Content/planning.jpg">
+        </div>
+        <div class="lArrw">&lt;</div>
+        <div class="close">X</div>
+        <div class="rArrw">&gt;</div>
+    <div class="subHeaderC">Solution</div>
+    <h3 class="subTitle">Overhaul The Planning Process</h3>
+    <div class="paraWrap">
+    <p class="para">Overhaul the planning process for constructing new buildings since 
+        there are too many restrictions in its current state (along with too much power in 
+        the hands of the general public to immediately stop the construction of new 
+        infrastructure). With this in place, the construction of affordable housing will 
+        be a much more efficient and easy process, allowing for it to be more successful 
+        overall and improve the lives of families all over San Francisco.
+    </p>
+    </div>
+    <div class="contImgC"><img loading="lazy" class="contImg" src="Content/planning.jpg" /></div>
+    <div class="dividerC"><div class="divider"></div></div>
+    <h3 class="subTitle rTitle">Attain More Land</h3>
+    <div class="paraWrap rParaWrap">
+    <p class="para rPara">Attain more land for new (affordable) housing by removing 
+        wealthy suburban homes and excess land from tech companies, and relocating its 
+        residents via a “seasteading” approach (where they would be situated along the outskirts 
+        of San Francisco near/ on the water through floating platforms), while using the 
+        land that has been cleared for affordable, residential housing facilities. In 
+        addition, the lure of “living on water” would be effective in driving up prices 
+        in the seasteading area to turn it into a luxury item, causing the people previously 
+        in 2-story houses along with higher-income residents to want to stay there. This would 
+        be necessary to ensure that there is enough room for all of the affordable housing 
+        units that we plan to build, and therefore help to reduce the financial burden that 
+        San Francisco house prices place on its citizens<span style="float:right">.</span>
+    </p>
+    </div>
+    <div class="contImgRC"><img loading="lazy" class="contImg" src="Content/zoomed_city.jpg" /></div>
+    <div class="dividerC dividerRC"><div class="divider"></div></div>
+    <h3 class="subTitle">Create SRO Housing</h3>
+    <div class="paraWrap">
+    <p class="para">Create housing out of more economically-minded materials, along with 
+        the construction of Single Room Occupancy housing (also known as Micro-units) 
+        to preserve space and accommodate more individuals. With this in place, more 
+        people would be able to be housed in San Francisco (in an affordable way), while 
+        eliminating the unnecessary need of a plethora of rooms, when a single one 
+        (such as the case is in an apartment) does more than enough.
+    </p>
+    </div>
+    <div class="contImgC"><img loading="lazy" class="contImg" src="Content/house.png" /></div>
+    <div class="dividerC"><div class="divider"></div></div>
+    <h3 class="subTitle rTitle">Create A Public Relations Campaign</h3>
+    <div class="paraWrap rParaWrap">
+    <p class="para rPara">Create a public relations campaign to get the public more 
+        accepting of extending height limits on buildings, removing past restrictions, 
+        etc. along with convincing people who are opposed to change (such as those who 
+        suffered from gentrification) to be more understanding of the project and its 
+        beneficial results. The final stage of this sub-idea would be to put in place new 
+        air regulation/ environmentally beneficial devices to gain more support even in 
+        the face of new construction. This would be necessary to make sure that the public 
+        fully understands the meaningful changes that we are bringing to San Francisco, 
+        rather than dismissing them out of ignorance<span style="float:right">.</span>
+    </p>
+    </div>
+    <div class="contImgRC"><img loading="lazy" class="contImg" src="Content/megaphone.png" /></div>
+    <div class="dividerC dividerRC"><div class="divider"></div></div>
+    <h3 class="subTitle">Preserve Rent Control</h3>
+    <div class="paraWrap">
+    <p class="para">Preserve rent control on housing that already exists in order to 
+        create a stable environment and make sure that renting prices are accurately (and 
+        appropriately) set. New regulations or other laws concerning this will also be 
+        created if needed, to make sure that the consumer is not priced out of the market. 
+        With this in place, tenants and other citizens living in our affordable houses would 
+        be fully protected, and not have to suffer like victims of the Ellis Act.
+    </p>
+    </div>
+    <div class="contImgC"><img loading="lazy" class="contImg" src="Content/tenant.jpg" /></div>
+    <div class="dividerC"><div class="divider"></div></div>
+    <h3 class="subTitle rTitle">Build More Transportation Systems</h3>
+    <div class="paraWrap rParaWrap">
+    <p class="para rPara">Build more transportation systems and fortifying those that 
+        already exist to allow for people to live in nearby suburbs, but commute to San 
+        Francisco- alleviating some of the stress on the housing crisis. This would be 
+        necessary in order to provide citizens with many different options on where exactly 
+        they would like to live while commuting to San Francisco, giving more power to the 
+        people rather than allowing the greedy house market to take advantage of consumers<span style="float:right">.</span>
+    </p>
+    </div>
+    <div class="contImgRC"><img loading="lazy" class="contImg" src="Content/subway.png" /></div>
+    <div class="dividerC dividerRC"><div class="divider"></div></div>
+    <h3 class="subTitle">Increase Taxes On Tech Companies</h3>
+    <div class="paraWrap">
+    <p class="para">Increase taxes on tech companies to a more reasonable level though 
+        the concept of a gross receipts tax (taxing the profits of companies rather than its 
+        employee’s payrolls), in order to help provide enough money to construct all of the 
+        affordable housing. In addition, government/ state subsidies would be used to help 
+        fund some of the housing facilities, along with helping to pay for each individual’s 
+        rent in order to make it more affordable to the average citizen living in the area. 
+        With this in place, people will have the ability to truly achieve their dream of living 
+        in an affordable housing unit, and not be left empty handed by false promises.
+    </p>
+    </div>
+    <div class="contImgC"><img loading="lazy" class="contImg" src="Content/money.jpg" /></div>
+    <div class="dividerC"><div class="divider"></div></div>
+</div> <!--End of contentC tag-->
+<div class="footerC">
+    <footer>&copy; 2021 Matthew and Aryan Inc.</footer>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type='text/javascript'>
+$(document).ready(function() {
+    scrollTop =  window.pageYOffset || document.documentElement.scrollTop; 
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+    var pictureArray = document.getElementsByClassName('contImg');
+    var currentSrc = "";
+    $("img").on("contextmenu",function(){
+        return false;
+     });
+     $(".contImg").click(function(){
+        $(".zoomImg").attr("src", $(this).attr("src"));
+        currentSrc = $(this).attr("src");
+        //var testSrc = currentSrc.replace("file:///C:/Users/Matth/OneDrive/Desktop/Current_School/BBT_Phoenix_Project_Website/", "");
+        var testSrc = currentSrc;
+	//alert("currentSrc: " + currentSrc);
+        /*window.onscroll = function() { 
+            window.scrollTo(scrollLeft, scrollTop); //this will disable scrolling
+        };*/
+        $(".zoomImgC").css({"display":"block"});
+        $(".close").css({"display":"block"});
+        $(".lArrw").css({"display":"block"});
+        $(".rArrw").css({"display":"block"});
+        if (testSrc == "Content/planning.jpg") {
+            $(".lArrw").css({"display":"none"});
+        }
+        if (testSrc == "Content/money.jpg") {
+            $(".rArrw").css({"display":"none"});
+        }
+     });
+     $(".rArrw").click(function(){
+	     //alert("calling right arrow function");
+        for (var index = 0; index<pictureArray.length; index++) {
+            var data = pictureArray[index].src; //this gets the src attribute which will be compared
+            //this cleans the string to make sure that the correct thing is being searched for
+            data = data.replace("https://roboticsdev1584.github.io/FRC-TEAM-5417/", "");//this line needs to be edited soon
+            data = data.replace("file:///C:/Users/Matth/OneDrive/Desktop/Current_School/BBT_Phoenix_Project_Website/", "");
+            //alert("scanning, current data: " + data);
+            if (data == currentSrc) {//match has been found, this must be the current img
+                //alert("found image!");
+                var newData = pictureArray[index + 1].src;
+                //alert("new data: " + newData);
+                newData = newData.replace("https://roboticsdev1584.github.io/FRC-TEAM-5417/", "");
+                newData = newData.replace("file:///C:/Users/Matth/OneDrive/Desktop/Current_School/BBT_Phoenix_Project_Website/", "");
+                $(".zoomImg").attr("src", newData); //flip to next image
+                currentSrc = newData;
+                //var testSrc = currentSrc.replace("file:///C:/Users/Matth/OneDrive/Desktop/Current_School/FRC_Website_Minified/Website_Pages/Media/Slideshows/2016/", "");
+                var testSrc = currentSrc.replace("Content", "");
+                //alert("currentSrc: " + currentSrc);
+                //currentSrc = pictureArray[index + 1].src;
+                //alert(testSrc);
+                $(".rArrw").css({"display":"none"});
+                $(".lArrw").css({"display":"none"});
+                $(".rArrw").css({"display":"block"});
+                $(".lArrw").css({"display":"block"});
+                if (testSrc == "/planning.jpg") {
+                    $(".lArrw").css({"display":"none"});
+                }
+                if (testSrc == "/money.jpg") {
+                    $(".rArrw").css({"display":"none"});
+                }
+                break;
+            }
+        }
+        //alert("exiting1");
+        return;
+     });//https://roboticsdev1584.github.io/FRC-TEAM-5417/Media/Slideshows/2016/2016_1.jpg
+     //alert("over here");
+	$(".lArrw").click(function(){
+	     //alert("calling left arrow function");
+        for (var index = 0; index<pictureArray.length; index++) {
+            var data = pictureArray[index].src; //this gets the src attribute which will be compared
+            //this cleans the string to make sure that the correct thing is being searched for
+            data = data.replace("https://roboticsdev1584.github.io/FRC-TEAM-5417/", "");
+            data = data.replace("file:///C:/Users/Matth/OneDrive/Desktop/Current_School/BBT_Phoenix_Project_Website/", "");
+            //alert("scanning, current data: " + data);
+            if (data == currentSrc) {//match has been found, this must be the current img
+                //alert("found image!");
+                var newData = pictureArray[index - 1].src;
+                //alert("new data: " + newData);
+                newData = newData.replace("https://roboticsdev1584.github.io/FRC-TEAM-5417/", "");
+                newData = newData.replace("file:///C:/Users/Matth/OneDrive/Desktop/Current_School/BBT_Phoenix_Project_Website/", "");
+                $(".zoomImg").attr("src", newData); //flip to next image
+                currentSrc = newData;
+                //var testSrc = currentSrc.replace("file:///C:/Users/Matth/OneDrive/Desktop/Current_School/FRC_Website_Minified/Website_Pages/Media/Slideshows/2016/", "");
+                var testSrc = currentSrc.replace("Content", "");
+                //alert("currentSrc: " + currentSrc);
+                //currentSrc = pictureArray[index + 1].src;
+                //alert(testSrc);
+                $(".rArrw").css({"display":"none"});
+                $(".lArrw").css({"display":"none"});
+                $(".rArrw").css({"display":"block"});
+                $(".lArrw").css({"display":"block"});
+                if (testSrc == "/planning.jpg") {
+                    $(".lArrw").css({"display":"none"});
+                }
+                if (testSrc == "/money.jpg") {
+                    $(".rArrw").css({"display":"none"});
+                }
+                break;
+            }
+        }
+        //alert("exiting1");
+        return;
+     });
+     //alert("over here2");
+     $(".close").click(function(){
+        window.onscroll = function() {}; //enable scrolling
+        $(".zoomImgC").css({"display":"none"});
+        $(".close").css({"display":"none"});
+        $(".lArrw").css({"display":"none"});
+        $(".rArrw").css({"display":"none"});
+     });
+ });
+</script>
+</html>
