@@ -475,14 +475,14 @@ $(document).ready(function() {
         for (var index = 0; index<pictureArray.length; index++) {
             var data = pictureArray[index].src; //this gets the src attribute which will be compared
             //this cleans the string to make sure that the correct thing is being searched for
-            data = data.replace("https://roboticsdev1584.github.io/FRC-TEAM-5417/", "");//this line needs to be edited soon
+            data = data.replace("https://roboticsdev1584.github.io/Save-San-Francisco/", "");//this line needs to be edited soon
             data = data.replace("file:///C:/Users/Matth/OneDrive/Desktop/Current_School/BBT_Phoenix_Project_Website/", "");
             //alert("scanning, current data: " + data);
             if (data == currentSrc) {//match has been found, this must be the current img
                 //alert("found image!");
                 var newData = pictureArray[index + 1].src;
                 //alert("new data: " + newData);
-                newData = newData.replace("https://roboticsdev1584.github.io/FRC-TEAM-5417/", "");
+                newData = newData.replace("https://roboticsdev1584.github.io/Save-San-Francisco/", "");
                 newData = newData.replace("file:///C:/Users/Matth/OneDrive/Desktop/Current_School/BBT_Phoenix_Project_Website/", "");
                 $(".zoomImg").attr("src", newData); //flip to next image
                 currentSrc = newData;
@@ -506,21 +506,21 @@ $(document).ready(function() {
         }
         //alert("exiting1");
         return;
-     });//https://roboticsdev1584.github.io/FRC-TEAM-5417/Media/Slideshows/2016/2016_1.jpg
+     });
      //alert("over here");
 	$(".lArrw").click(function(){
 	     //alert("calling left arrow function");
         for (var index = 0; index<pictureArray.length; index++) {
             var data = pictureArray[index].src; //this gets the src attribute which will be compared
             //this cleans the string to make sure that the correct thing is being searched for
-            data = data.replace("https://roboticsdev1584.github.io/FRC-TEAM-5417/", "");
+            data = data.replace("https://roboticsdev1584.github.io/Save-San-Francisco/", "");
             data = data.replace("file:///C:/Users/Matth/OneDrive/Desktop/Current_School/BBT_Phoenix_Project_Website/", "");
             //alert("scanning, current data: " + data);
             if (data == currentSrc) {//match has been found, this must be the current img
                 //alert("found image!");
                 var newData = pictureArray[index - 1].src;
                 //alert("new data: " + newData);
-                newData = newData.replace("https://roboticsdev1584.github.io/FRC-TEAM-5417/", "");
+                newData = newData.replace("https://roboticsdev1584.github.io/Save-San-Francisco/", "");
                 newData = newData.replace("file:///C:/Users/Matth/OneDrive/Desktop/Current_School/BBT_Phoenix_Project_Website/", "");
                 $(".zoomImg").attr("src", newData); //flip to next image
                 currentSrc = newData;
