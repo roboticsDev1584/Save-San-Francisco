@@ -1,1 +1,2 @@
-# Save-San-Francisco
+# Save San Francisco Website
+Please note that this website was developed from scratch for a school project, and the bibliography embed (on the 'Bibliography' page) is only intended to be viewed by students/ teachers within the school district, so it is not accessible to users outside of this organization. Also, note that most of the pictures on the website were not created by the owners of the website, but rather through the third-parties Pixabay and Unsplash.
