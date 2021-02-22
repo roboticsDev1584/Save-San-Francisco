@@ -95,17 +95,20 @@ Pixabay.com and Unsplash.com, along with all font styles belonging to Google Fon
             overflow:hidden;
         }
         .navObj {
+            position:relative;
             display:block;
             box-sizing:border-box;
             padding:10px;
             font-size:20px;
             user-select:none;
-            background-color:#ffe3b3;
+            background-color:rgba(255, 199, 102, 0.94);/*or #ffe3b3 or #ffc766*/
             text-overflow:ellipsis;
             height:45px;
+            transition: 0.7s ease;
         }
         .navObj:hover {
-            background-color:#ffda99;
+            color:white;
+            background-color:rgba(0, 0, 0, 0.7);/*or #ffda99*/
         }
         .subTitle {
             font-weight:500;
