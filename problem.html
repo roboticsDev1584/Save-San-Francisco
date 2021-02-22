@@ -12,7 +12,7 @@ Pixabay.com and Unsplash.com, along with all font styles belonging to Google Fon
     <title>Saving San Francisco - Problem</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--This is for the favicon when I create it-->
+    <link rel="shortcut icon" href="Content/favicon.ico" type="image/x-icon"> <!--This is for the favicon when I create it-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://fonts.gstatic.com/">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
@@ -306,6 +306,23 @@ Pixabay.com and Unsplash.com, along with all font styles belonging to Google Fon
         .rArrw:hover {
             color:#b3b3b3;
         }
+        .imgGallery {
+            display:flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+            justify-content:space-around;
+            align-items:center;
+            height:auto;
+            margin-right:auto;
+            margin-left:auto;
+            width:95%;
+            border-top:5px solid #4d94ff;
+            background-color:rgba(255, 199, 102, 0.6);
+            padding:10px 3px 6px;
+        }
+        .imgG {
+            margin:6px;
+        }
         @media (max-width: 770px){
             .lArrw {
                 width:0px;
@@ -439,6 +456,32 @@ Pixabay.com and Unsplash.com, along with all font styles belonging to Google Fon
     </div>
     <div class="contImgRC"><img loading="lazy" class="contImg" src="Content/effects.png" /></div>
     <div class="dividerC dividerRC"><div class="divider"></div></div>
+    <h3 class="subTitle" style="font-size:27px;padding-top:2%;">Related Infographics</h3>
+    <div class="paraWrap">
+        <div class="imgGallery">
+        <!--Citation:
+        Massaro, Rachel. “2020 Silicon Valley Index.” Joint Venture, 2020. jointventure.org/images/stories/pdf/index2020.pdf. Accessed 21 Feb. 2021.
+        -->
+        <div class="imgG"><img loading="lazy" class="contImg" style="margin:0;height:auto;width:250px;" src="Content/affordability.png" /></div>
+        <!--Citation:
+        San Francisco Department of Public Health. “Residential Population Density.” San Francisco Climate & Health Program, 2021. https://sfclimatehealth.org/portfolio/residential-population-density/. Accessed 21 Feb. 2021.
+        -->
+        <div class="imgG"><img loading="lazy" class="contImg" style="margin:0;height:auto;width:250px;" src="Content/pop_density.png" /></div>
+        <!--Citation:
+        Levay, Bill. “S.F. Homeless Population Map.” Pratt Institute, April 17, 2015. https://studentwork.prattsi.org/infovis/visualization/mapping-homelessness-and-affordable-housing-in-san-francisco/. Accessed 21 Feb. 2021.
+        -->
+        <div class="imgG"><img loading="lazy" class="contImg" style="margin:0;height:auto;width:250px;" src="Content/homeless_pop.png" /></div>
+        <!--Citation:
+        Massaro, Rachel. “2020 Silicon Valley Index.” Joint Venture, 2020. jointventure.org/images/stories/pdf/index2020.pdf. Accessed 21 Feb. 2021.
+        -->
+        <div class="imgG"><img loading="lazy" class="contImg" style="margin:0;height:auto;width:250px;" src="Content/rental_rates.png" /></div>
+        <!--Citation:
+        Massaro, Rachel. “2020 Silicon Valley Index.” Joint Venture, 2020. jointventure.org/images/stories/pdf/index2020.pdf. Accessed 21 Feb. 2021.
+        -->
+        <div class="imgG"><img loading="lazy" class="contImg" style="margin:0;height:auto;width:250px;" src="Content/housing_prices.png" /></div>
+        </div>
+    </div>
+    <div class="dividerC"><div class="divider"></div></div>
 </div> <!--End of contentC tag-->
 <div class="footerC">
     <footer>&copy; 2021 Matthew and Aryan Inc.</footer>
@@ -467,10 +510,10 @@ $(document).ready(function() {
         $(".close").css({"display":"block"});
         $(".lArrw").css({"display":"block"});
         $(".rArrw").css({"display":"block"});
-        if (testSrc == "Content/homeless.jpg") {
+        if (testSrc == "Content/homeless.jpg" || testSrc == "Content/affordability.png") {
             $(".lArrw").css({"display":"none"});
         }
-        if (testSrc == "Content/effects.png") {
+        if (testSrc == "Content/effects.png" || testSrc == "Content/housing_prices.png") {
             $(".rArrw").css({"display":"none"});
         }
      });
@@ -499,10 +542,10 @@ $(document).ready(function() {
                 $(".lArrw").css({"display":"none"});
                 $(".rArrw").css({"display":"block"});
                 $(".lArrw").css({"display":"block"});
-                if (testSrc == "/homeless.jpg") {
+                if (testSrc == "/homeless.jpg" || testSrc == "/affordability.png") {
                     $(".lArrw").css({"display":"none"});
                 }
-                if (testSrc == "/effects.png") {
+                if (testSrc == "/effects.png" || testSrc == "/housing_prices.png") {
                     $(".rArrw").css({"display":"none"});
                 }
                 break;
@@ -537,10 +580,10 @@ $(document).ready(function() {
                 $(".lArrw").css({"display":"none"});
                 $(".rArrw").css({"display":"block"});
                 $(".lArrw").css({"display":"block"});
-                if (testSrc == "/homeless.jpg") {
+                if (testSrc == "/homeless.jpg" || testSrc == "/affordability.png") {
                     $(".lArrw").css({"display":"none"});
                 }
-                if (testSrc == "/effects.png") {
+                if (testSrc == "/effects.png" || testSrc == "/housing_prices.png") {
                     $(".rArrw").css({"display":"none"});
                 }
                 break;
